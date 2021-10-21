@@ -5,7 +5,7 @@
          public $year;
          public $genre;
 
-         function _construct($_name, $_director, $_year, $_genre) 
+         function __construct($_name, $_director, $_year, $_genre) 
          {
              $this->name = $_name;
              $this->director = $_director;
@@ -34,6 +34,14 @@
         <h1>
             <?php
                 echo $django->name;
+            ?>
+        </h1>
+    </div>
+
+    <div class="movie">
+        <h1>
+            <?php
+                echo $venom->name;
             ?>
         </h1>
     </div>
